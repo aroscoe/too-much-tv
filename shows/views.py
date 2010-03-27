@@ -3,6 +3,7 @@ from django.views.generic.simple import direct_to_template
 from tvdb_api import Tvdb
 from tvdb_exceptions import tvdb_error, tvdb_shownotfound
 
+from shows.models import Show
 from shows.forms import ShowSearchForm, ShowForm
 
 def add(request):
@@ -38,8 +39,9 @@ def add(request):
 def delete(request):
     pass
 
-def info(request):
-    pass
+def info(request, id):
+    show = Show.objects.get(pk=id)
+    return direct_to_template(request, 'shows/info.html', locals())
 
 def update(request):
     pass
