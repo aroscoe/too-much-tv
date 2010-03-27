@@ -3,7 +3,6 @@ from django import forms
 from shows.models import Show
 
 class ShowForm(forms.ModelForm):
-    # TODO: add validation to check and see if that show is already in the db
     
     class Meta:
         model = Show
