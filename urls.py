@@ -12,7 +12,6 @@ urlpatterns = patterns('',
 )
 
 if settings.DEBUG:
-    # TODO: use PROJECT_ROOT?
     urlpatterns += patterns('',
-        (r'^assets/(?P<path>.*)$', 'django.views.static.serve', {'document_root': os.path.join(os.path.dirname(__file__), 'assets')}),
+        (r'^assets/(?P<path>.*)$', 'django.views.static.serve', {'document_root': os.path.join(settings.PROJECT_ROOT, "assets")}),
     )
