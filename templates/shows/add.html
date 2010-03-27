@@ -2,7 +2,7 @@
 
 {% block body %}
 
-<form method="post" action=".">
+<form method="post" action="{% url shows_add %}">
     {% if error_msg %}
     <p>{{error_msg}}</p>
     {% endif %}

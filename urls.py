@@ -7,6 +7,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
+    url(r'^$', 'shows.views.add', name="home"),
     url(r'^shows/', include('shows.urls'), name="shows"),
     (r'^admin/', include(admin.site.urls)),
 )
