@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <title>too much tv</title>
+
+    <!-- Meta Info -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="{{MEDIA_URL}}css/global.css" />
+    <link rel="stylesheet" type="text/css" href="{{MEDIA_URL}}css/screen.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="{{MEDIA_URL}}css/print.css" media="print" />
+    <link rel="icon" type="image/x-icon" href="{{MEDIA_URL}}img/favicon.ico" />
+
+    <!--[if lt IE 8]>
+        <link rel="stylesheet" href="{{MEDIA_URL}}css/ie.css" media="screen, projection" />
+        <link rel="Shortcut Icon" href="{{MEDIA_URL}}img/favicon.ico" />
+    <![endif]-->
+
+    <!-- Javascripts -->
+    <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="{{MEDIA_URL}}js/system.js"></script> -->
+
+</head>
+<body class="cf">
+<div id="document">
+
+    <header>
+        <h1>TooMuchTV</h1>
+        <nav>
+            <ul>
+                <li><a href=""><span>Guide</span></a></li>
+                <li><a href=""><span>Add Show</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside id="shows">
+        <ul>
+            <li><a href="">Band of Brothers</a></li>
+            <li><a href="">Battlestar Galactica</a></li>
+            <li><a href="">Brotherhood</a></li>
+            <li class="selected"><a href="">Curb Your Enthusiasm</a></li>
+            <li><a href="">Dexter</a></li>
+            <li><a href="">East Bound & Down</a></li>
+            <li><a href="">Entourage</a></li>
+            <li><a href="">Fresh Prince of Bel Air</a></li>
+            <li><a href="">Friday Night Lights</a></li>
+            <li><a href="">Grey's Anatomy</a></li>
+            <li><a href="">Huff</a></li>
+            <li><a href="">Hung</a></li>
+            <li><a href="">Jericho</a></li>
+        </ul>
+    </aside>
+
+    <section id="body">
+        {% block body %}{% endblock %}
+    </section>
+
+</div>
+</body>
+</html>

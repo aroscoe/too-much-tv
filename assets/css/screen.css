@@ -1,0 +1,83 @@
+/* SCREEN **************************************************/
+
+body {
+    padding: 10px 32px 32px 32px;
+    border: 8px solid #e5e5e5;
+}
+
+/* Typography
+------------------------------------------------------ */
+html, body {
+    font-family: Helvetica;
+    color: #313131;
+}
+a {
+    color: #006aaa;
+    text-decoration: none;
+}
+h2 {
+    font-size: 30px;
+    border-bottom: 1px solid #313131;
+}
+p {
+    font-size: 14px;
+}
+
+/* Header
+------------------------------------------------------ */
+header {
+    height: 70px;
+    margin-bottom: 24px;
+}
+header h1 {
+    float: left;
+    width: 248px;
+    height: 70px;
+    text-indent: -10000px;
+    background: url("../img/logo.png") no-repeat 0 0;
+}
+header h1:hover {
+    background-position: 0 -70px;
+}
+nav {
+    float: left;
+    margin-left: 20px;
+    padding-top: 36px;
+    font-size: 18px;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a span {
+    margin: 0 10px;
+}
+
+/* Show List
+------------------------------------------------------ */
+aside#shows {
+    float: left;
+    width: 35%;
+    font-size: 24px;
+}
+aside#shows ul li {
+    margin-bottom: 20px;
+}
+aside#shows ul li.selected a {
+    font-size: 30px;
+    font-weight: bold;
+    color: #313131;
+}
+
+/* Body
+------------------------------------------------------ */
+section#body {
+    float: left;
+    width: 65%;
+}
+ul#show_options {
+    margin: 4px 0 20px 0;
+}
+ul#show_options li {
+    float: left;
+    margin-right: 10px;
+}

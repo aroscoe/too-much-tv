@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<form method="post" action=".">
+    {% if error_msg %}
+    <p>{{error_msg}}</p>
+    {% endif %}
+    
+    {{search_form}}
+    <input type="submit" id="search" value="Search" />
+</form>
+
+{% endblock %}
