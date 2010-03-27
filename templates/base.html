@@ -1,3 +1,4 @@
+{% load show_tags %}
 <!doctype html>
 <html>
 <head>
@@ -37,23 +38,7 @@
         </nav>
     </header>
 
-    <aside id="shows">
-        <ul>
-            <li><a href="">Band of Brothers</a></li>
-            <li><a href="">Battlestar Galactica</a></li>
-            <li><a href="">Brotherhood</a></li>
-            <li class="selected"><a href="">Curb Your Enthusiasm</a></li>
-            <li><a href="">Dexter</a></li>
-            <li><a href="">East Bound & Down</a></li>
-            <li><a href="">Entourage</a></li>
-            <li><a href="">Fresh Prince of Bel Air</a></li>
-            <li><a href="">Friday Night Lights</a></li>
-            <li><a href="">Grey's Anatomy</a></li>
-            <li><a href="">Huff</a></li>
-            <li><a href="">Hung</a></li>
-            <li><a href="">Jericho</a></li>
-        </ul>
-    </aside>
+    {% show_list %}
 
     <section id="body">
         {% block body %}{% endblock %}
