@@ -1,3 +1,4 @@
+from django.shortcuts import redirect
 from django.views.generic.simple import direct_to_template
 
 from tvdb_api import Tvdb
@@ -36,12 +37,14 @@ def add(request):
         search_form = ShowSearchForm()
     return direct_to_template(request, 'shows/add.html', locals())
 
-def delete(request):
-    pass
-
 def info(request, slug):
     show = Show.objects.get(slug=slug)
     return direct_to_template(request, 'shows/info.html', locals())
+
+def delete(request, id):
+    show = Show.objects.get(pk=id)
+    show.delete()
+    return redirect('home')
 
 def update(request):
     pass

@@ -5,7 +5,7 @@
 <h2>{{show.name}}</h2>
 <ul id="show_options" class="cf">
     <li><a href=""><span>next episode</span></a></li>
-    <li><a href=""><span>delete</span></a></li>
+    <li><a href="{% url shows_delete show.pk %}"><span>delete</span></a></li>
 </ul>
 <p>{{show.description}}</p>
 
