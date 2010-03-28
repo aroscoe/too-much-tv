@@ -1,7 +1,7 @@
 <aside id="shows">
     <ul>
         {% for show in shows %}
-        <li><a href="{% url shows_info show.pk %}">{{show.name}}</a></li>
+        <li><a href="{% url shows_info show.slug %}">{{show.name}}</a></li>
         {% endfor %}
     </ul>
 </aside>

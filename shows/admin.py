@@ -2,4 +2,7 @@ from django.contrib import admin
 
 from shows.models import *
 
-admin.site.register(Show)
+class ShowAdmin(admin.ModelAdmin):
+    prepopulated_fields = {"slug": ("name",)}
+
+admin.site.register(Show, ShowAdmin)

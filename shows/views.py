@@ -39,8 +39,8 @@ def add(request):
 def delete(request):
     pass
 
-def info(request, id):
-    show = Show.objects.get(pk=id)
+def info(request, slug):
+    show = Show.objects.get(slug=slug)
     return direct_to_template(request, 'shows/info.html', locals())
 
 def update(request):

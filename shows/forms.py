@@ -6,6 +6,7 @@ class ShowForm(forms.ModelForm):
     
     class Meta:
         model = Show
+        exclude = ('slug',)
 
 class ShowSearchForm(forms.Form):
     show = forms.CharField()
